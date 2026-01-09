@@ -16,15 +16,15 @@ export const AboutSection = () => {
 
             <p className="text-muted-foreground">
               I am a developer based in Indonesia with a strong focus on 
-              <strong> Web Development</strong> and <strong>Machine Learning</strong>. 
+              <strong>Web Development</strong> and <strong>Machine Learning</strong>. 
               I actively build real-world applications ranging from full-stack web systems 
               to AI-powered solutions.
             </p>
 
             <p className="text-muted-foreground">
               My experience includes developing web applications using 
-              <strong> PHP (Native & Laravel)</strong>, <strong>JavaScript</strong>, 
-              and <strong>React</strong>, as well as building Machine Learning projects such as 
+              <strong> PHP (Native & Laravel)</strong>, <strong>MERN Stack (MongoDB, Express, React, Node.js)</strong>, 
+              and <strong>Python</strong>, as well as building Machine Learning projects such as 
               <strong> BISINDO sign language detection using YOLO</strong>, 
               <strong> real-time WebSocket-based AI systems</strong>, 
               and <strong> CNN-based image classification</strong>.
@@ -53,8 +53,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Web Development</h4>
                   <p className="text-muted-foreground">
-                    Building full-stack applications using PHP (Native & Laravel), 
-                    JavaScript, React, REST API, and WebSocket.
+                    Building full-stack applications using MERN Stack, 
+                    PHP (Native & Laravel), REST API, and WebSocket.
                   </p>
                 </div>
               </div>
@@ -83,9 +83,9 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Experience</h4>
                   <p className="text-muted-foreground">
-                    Hands-on experience through multiple academic and personal projects, 
-                    including BISINDO AI systems, weather prediction apps, 
-                    and various web-based platforms.
+                    Hands-on experience through Bangkit Academy capstone projects, 
+                    BISINDO AI systems, weather prediction apps, 
+                    and various full-stack web platforms.
                   </p>
                 </div>
               </div>
