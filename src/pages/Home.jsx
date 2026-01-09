@@ -1,5 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import { ThemeToggle } from "../components/ThemeToggle";
+import { BackToTop } from "../components/BackToTop"; // [!code ++] Tambahkan import ini
 import { StarBackground } from "@/components/StarBackground";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
@@ -13,6 +14,10 @@ export const Home = () => {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Theme Toggle */}
       <ThemeToggle />
+      
+      {/* Back To Top Button */}
+      <BackToTop /> {/* [!code ++] Tambahkan komponen di sini */}
+
       {/* Background Effects */}
       <StarBackground />
 
