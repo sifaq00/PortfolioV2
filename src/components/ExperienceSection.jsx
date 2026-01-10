@@ -173,7 +173,7 @@ export const ExperienceSection = () => {
 				>
 					<h2 className="text-3xl sm:text-4xl font-bold">
 						My{" "}
-						<span className="text-primary">Experience</span>
+						<span className="text-primary">Experiences</span>
 					</h2>
 					<p className="text-muted-foreground mt-4 max-w-xl mx-auto text-sm sm:text-base">
 						A curated timeline of my professional journey, internships, and

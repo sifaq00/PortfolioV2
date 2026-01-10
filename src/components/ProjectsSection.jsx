@@ -3,9 +3,9 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
 	{
 		id: 1,
-		title: "BISINDO YOLO Mediapipe",
+		title: "BISINDO YOLO Mediapipe (Frontend)",
 		description:
-			"Frontend untuk deteksi bahasa isyarat BISINDO menggunakan YOLO dan MediaPipe.",
+			"Frontend for BISINDO sign language detection using YOLO and MediaPipe.",
 		image: "/projects/bisindo.png",
 		tags: ["Frontend", "React", "YOLO", "MediaPipe"],
 		demoUrl: "https://bisindo-detection.asiff.live",
@@ -14,9 +14,9 @@ const projects = [
 	},
 	{
 		id: 2,
-		title: "BISINDO YOLO WebSocket",
+		title: "BISINDO YOLO WebSocket (Backend)",
 		description:
-			"Backend real-time AI BISINDO dengan WebSocket dan Python.",
+			"Real-time BISINDO AI backend with WebSocket and Python.",
 		image: "/projects/bisindo2.png",
 		tags: ["Backend", "Python", "WebSocket", "YOLO"],
 		demoUrl: "https://bisindo-detection.asiff.live",
@@ -27,7 +27,7 @@ const projects = [
 		id: 3,
 		title: "Weather Prediction App",
 		description:
-			"Aplikasi prediksi cuaca dengan ML, frontend React dan backend Python.",
+			"Weather prediction app using ML, React frontend and Python backend.",
 		image: "/projects/weather.png",
 		tags: ["Frontend", "Backend", "React", "Python", "ML"],
 		demoUrl: "https://prediksi-cuaca.asiff.live",
@@ -37,9 +37,9 @@ const projects = [
 	},
 	{
 		id: 4,
-		title: "DSFagency MERN",
+		title: "DSF Agency MERN",
 		description:
-			"Platform agency dengan stack MERN, frontend dan backend terpisah.",
+			"Agency platform with MERN stack, separated frontend and backend, with CMS.",
 		image: "/projects/agency2.png",
 		tags: [
 			"Frontend",
@@ -57,8 +57,8 @@ const projects = [
 	},
 	{
 		id: 5,
-		title: "Thas Laravel",
-		description: "Website sekolah hospitality dengan Laravel.",
+		title: "Tumbuh Hospitality & Arts School",
+		description: "Campus website for Tumbuh Hospitality & Arts School using Laravel.",
 		image: "/projects/thas.png",
 		tags: ["Backend", "Laravel", "PHP"],
 		demoUrl: "https://hospitalityartsschool.asiff.live",
@@ -68,7 +68,7 @@ const projects = [
 	{
 		id: 6,
 		title: "StoryHub",
-		description: "Platform berbagi cerita, social media sederhana.",
+		description: "Simple social media platform for sharing stories.",
 		image: "/projects/storyhub.png",
 		tags: ["Frontend", "React", "Social"],
 		demoUrl: "https://storyhub.asiff.live",
@@ -77,8 +77,8 @@ const projects = [
 	},
 	{
 		id: 7,
-		title: "Pet Rescue Bangkit",
-		description: "Aplikasi Android capstone Bangkit untuk adopsi hewan.",
+		title: "Pet Rescue",
+		description: "Android capstone app for finding lost pets (Bangkit program).",
 		image: "/projects/petrescue.png",
 		tags: ["Android", "Bangkit", "Capstone"],
 		demoUrl: "#",
@@ -89,7 +89,7 @@ const projects = [
 		id: 8,
 		title: "Madrasah Website",
 		description:
-			"Single Page Application profil madrasah dengan React & Vite.",
+			"Single Page Application for madrasah profile using React & Vite.",
 		image: "/projects/madrasah.png",
 		tags: ["Frontend", "React", "Vite"],
 		demoUrl: "https://mabdaulhuda.asiff.live/",
@@ -119,7 +119,7 @@ export const ProjectsSection = () => {
 							key={key}
 							className="group bg-gradient-to-br from-secondary/60 to-card/80 rounded-xl overflow-hidden shadow-lg hover:shadow-primary/30 card-hover border border-border/30 transition-all duration-300 hover:-translate-y-1"
 						>
-							<div className="h-48 overflow-hidden relative">
+							<div className="h-56 overflow-hidden relative">
 								<img
 									src={project.image}
 									alt={project.title}
@@ -158,7 +158,15 @@ export const ProjectsSection = () => {
 								</div>
 
 								<h3 className="text-xl font-semibold mb-1">
-									{project.title}
+									{(project.demoUrl && project.demoUrl !== "#") ? (
+										<a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-300">
+											{project.title}
+										</a>
+									) : (
+										<a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-300">
+											{project.title}
+										</a>
+									)}
 								</h3>
 								<p className="text-muted-foreground text-sm mb-4">
 									{project.description}
