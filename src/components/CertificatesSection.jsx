@@ -192,7 +192,7 @@ export const CertificatesSection = () => {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 blur-[120px] -z-10" />
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <div ref={sectionHeaderRef} className="text-center mb-16 space-y-4 scroll-mt-32">
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-4xl font-bold">
             My <span className="text-primary text-glow">Certificates</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
