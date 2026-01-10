@@ -73,6 +73,17 @@ const projects = [
     githubUrl: "https://github.com/sifaq00/Pet-Rescue-CH2-PS354-Bangkit",
     category: "android"
   },
+  {
+    id: 8,
+    title: "Madrasah Website",
+    description: "Single Page Application profil madrasah dengan React & Vite.",
+    image: "/projects/madrasah.png",
+    tags: ["Frontend", "React", "Vite"],
+    demoUrl: "https://mabdaulhuda.asiff.live/",
+    githubUrl: "https://github.com/sifaq00/madrasah",
+    category: "frontend"
+  }
+
 ];
 
 export const ProjectsSection = () => {

@@ -1,4 +1,4 @@
-import { ArrowUp } from "lucide-react";
+
 
 export const Footer = () => {
   return (
@@ -21,24 +21,7 @@ export const Footer = () => {
         {/* Divider (mobile only) */}
         <div className="w-full h-px bg-border md:hidden" />
 
-        {/* Right */}
-        <a
-          href="#hero"
-          aria-label="Back to top"
-          className="
-            flex items-center gap-2
-            px-4 py-2 rounded-full
-            border border-border
-            text-sm text-muted-foreground
-            hover:text-primary
-            hover:border-primary/50
-            hover:bg-primary/5
-            transition-all duration-300
-          "
-        >
-          <ArrowUp size={16} />
-          Back to top
-        </a>
+        
       </div>
     </footer>
   );
