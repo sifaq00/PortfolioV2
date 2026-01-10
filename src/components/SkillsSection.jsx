@@ -96,14 +96,14 @@ export const SkillsSection = () => {
   };
 
   return (
-    <section id="skills" className="py-24 px-4 relative bg-secondary/30">
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl" />
-      </div>
+    <section id="skills" className="py-24 px-4 relative">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+        {/* Background decoration */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl" />
+        </div>
 
-      <div className="container mx-auto max-w-6xl relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           My <span className="text-primary">Skills</span>
         </h2>

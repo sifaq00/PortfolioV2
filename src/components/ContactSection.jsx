@@ -57,8 +57,8 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-28 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-6xl relative z-10">
+    <section id="contact" className="py-24 px-4 relative">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Get In <span className="text-primary">Touch</span>
@@ -169,8 +169,8 @@ export const ContactSection = () => {
               <div className="flex gap-4">
                 {[
                   { href: "https://github.com/sifaq00", icon: Github },
-                  { href: "https://www.linkedin.com/in/sifaq00/", icon: Linkedin },
-                  { href: "https://instagram.com/sifaq00", icon: Instagram },
+                  { href: "https://www.linkedin.com/in/muhammad-asifaq/", icon: Linkedin },
+                  { href: "https://instagram.com/m.asfq_", icon: Instagram },
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (

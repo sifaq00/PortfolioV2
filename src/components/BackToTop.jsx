@@ -46,7 +46,10 @@ export const BackToTop = () => {
     <button
       onClick={scrollToTop}
       className={cn(
-        "fixed bottom-8 right-8 z-50 flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 transform hover:scale-110 focus:outline-hidden group",
+        // Desktop: bottom-8, Mobile: bottom-16 (lebih rendah dari sebelumnya)
+        "fixed right-8 z-50 flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 transform hover:scale-110 focus:outline-hidden group",
+        "bottom-8 sm:bottom-8", // default desktop
+        "max-sm:bottom-16", // mobile: lebih rendah
         isVisible
           ? "opacity-100 translate-y-0 pointer-events-auto"
           : "opacity-0 translate-y-10 pointer-events-none"

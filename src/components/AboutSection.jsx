@@ -3,30 +3,29 @@ import { Briefcase, Code, Cpu } from "lucide-react";
 export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           About <span className="text-primary"> Me</span>
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center max-sm:px-0">
+          <div className="space-y-6 max-sm:space-y-4 max-sm:px-2">
             <h3 className="text-2xl font-semibold">
               Web Developer & Machine Learning Engineer
             </h3>
 
             <p className="text-muted-foreground">
-              I am a developer based in Indonesia with a strong focus on 
-              <strong>Web Development</strong> and <strong>Machine Learning</strong>. 
-              I actively build real-world applications ranging from full-stack web systems 
+              I am a developer based in Indonesia with a strong focus on
+              <strong>Web Development</strong> and <strong>Machine Learning</strong>.
+              I actively build real-world applications ranging from full-stack web systems
               to AI-powered solutions.
             </p>
 
             <p className="text-muted-foreground">
-              My experience includes developing web applications using 
-              <strong> PHP (Native & Laravel)</strong>, <strong>MERN Stack (MongoDB, Express, React, Node.js)</strong>, 
-              and <strong>Python</strong>, as well as building Machine Learning projects such as 
-              <strong> BISINDO sign language detection using YOLO</strong>, 
-              <strong> real-time WebSocket-based AI systems</strong>, 
+              My experience includes developing web applications using
+              <strong> PHP (Native & Laravel)</strong>, <strong>MERN Stack (MongoDB, Express, React, Node.js)</strong>,
+              and <strong>Python</strong>, as well as building Machine Learning projects such as
+              <strong> BISINDO sign language detection using YOLO</strong>,
+              <strong> real-time WebSocket-based AI systems</strong>,
               and <strong> CNN-based image classification</strong>.
             </p>
 
@@ -53,7 +52,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Web Development</h4>
                   <p className="text-muted-foreground">
-                    Building full-stack applications using MERN Stack, 
+                    Building full-stack applications using MERN Stack,
                     PHP (Native & Laravel), REST API, and WebSocket.
                   </p>
                 </div>
@@ -68,7 +67,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Machine Learning & AI</h4>
                   <p className="text-muted-foreground">
-                    Developing AI systems using YOLO, CNN, and MediaPipe for 
+                    Developing AI systems using YOLO, CNN, and MediaPipe for
                     sign language detection, image classification, and real-time inference.
                   </p>
                 </div>
@@ -83,8 +82,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Experience</h4>
                   <p className="text-muted-foreground">
-                    Hands-on experience through Bangkit Academy capstone projects, 
-                    BISINDO AI systems, weather prediction apps, 
+                    Hands-on experience through Bangkit Academy capstone projects,
+                    BISINDO AI systems, weather prediction apps,
                     and various full-stack web platforms.
                   </p>
                 </div>
