@@ -41,7 +41,30 @@ export const MobileNavbar = () => {
     document.querySelectorAll("section").forEach((section) => {
       observer.observe(section);
     });
+    // Perbaiki agar indikator tetap update saat scroll
     return () => observer.disconnect();
+  }, []);
+
+  // Pastikan indikator tetap aktif pada skills dan projects
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionIds = navItems.map(item => item.href.replace('#', ''));
+      let found = false;
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom >= 80) {
+            setActiveSection(id);
+            found = true;
+            break;
+          }
+        }
+      }
+      if (!found) setActiveSection('hero');
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (

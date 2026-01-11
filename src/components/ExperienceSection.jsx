@@ -3,17 +3,18 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Calendar, MapPin, Building2 } from "lucide-react";
 import PropTypes from "prop-types";
 
+// Urutkan experiences: Intern (2025), Coding Camp (2025), Bangkit (2023)
 const experiences = [
 	{
 		id: 1,
-		role: "Machine Learning Cohort",
-		company: "Bangkit Academy by Google, GoTo, & Traveloka",
-		location: "Remote / Coursera & Dicoding",
-		date: "2023",
+		role: "Fullstack Developer Intern",
+		company: "Sekolah Tumbuh",
+		location: "Yogyakarta, Indonesia",
+		date: "2025",
 		description:
-			"Selected as a Machine Learning cohort. Built an AI model for the 'Pet Rescue' application as a capstone project using TensorFlow for animal classification.",
-		tech: ["Machine Learning", "TensorFlow", "Python", "Deep Learning"],
-		image: "/experience/bangkit.png",
+			"Worked on Laravel-based school website development, handling database integration and user-facing interfaces for operational systems.",
+		tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+		image: "/experience/tumbuh.png",
 	},
 	{
 		id: 2,
@@ -28,14 +29,14 @@ const experiences = [
 	},
 	{
 		id: 3,
-		role: "Fullstack Developer Intern",
-		company: "Sekolah Tumbuh",
-		location: "Yogyakarta, Indonesia",
-		date: "2025",
+		role: "Machine Learning Cohort",
+		company: "Bangkit Academy by Google, GoTo, & Traveloka",
+		location: "Remote / Coursera & Dicoding",
+		date: "2023",
 		description:
-			"Worked on Laravel-based school website development, handling database integration and user-facing interfaces for operational systems.",
-		tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
-		image: "/experience/tumbuh.png",
+			"Selected as a Machine Learning cohort. Built an AI model for the 'Pet Rescue' application as a capstone project using TensorFlow for animal classification.",
+		tech: ["Machine Learning", "TensorFlow", "Python", "Deep Learning"],
+		image: "/experience/bangkit.png",
 	},
 ];
 
