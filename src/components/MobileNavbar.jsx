@@ -47,10 +47,10 @@ export const MobileNavbar = () => {
   return (
     <nav
       className={cn(
-        "fixed bottom-0 left-1/2 -translate-x-1/2 z-50 w-full max-w-md px-2 py-1",
-        "bg-white/90 backdrop-blur-xl border-t border-zinc-200 shadow-lg",
+        "fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full max-w-md px-2 py-1",
+        "bg-white/90 backdrop-blur-xl border-b border-zinc-200 shadow-lg",
         "dark:bg-black/60 dark:border-white/10 dark:shadow-black/10",
-        "flex items-center justify-between gap-1 rounded-t-2xl"
+        "flex items-center justify-between gap-1 rounded-b-2xl"
       )}
     >
       <div className="flex items-center justify-between w-full overflow-x-auto scrollbar-none">

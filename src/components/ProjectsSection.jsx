@@ -3,7 +3,7 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
 	{
 		id: 1,
-		title: "BISINDO YOLO Mediapipe (Frontend)",
+		title: "BISINDO YOLO Mediapipe",
 		description:
 			"Frontend for BISINDO sign language detection using YOLO and MediaPipe.",
 		image: "/projects/bisindo.png",
@@ -14,9 +14,9 @@ const projects = [
 	},
 	{
 		id: 2,
-		title: "BISINDO YOLO WebSocket (Backend)",
+		title: "BISINDO YOLO WebSocket",
 		description:
-			"Real-time BISINDO AI backend with WebSocket and Python.",
+			"Backend for BISINDO AI using FastAPI, supporting both WebSocket and RESTful API.",
 		image: "/projects/bisindo2.png",
 		tags: ["Backend", "Python", "WebSocket", "YOLO"],
 		demoUrl: "https://bisindo-detection.asiff.live",
@@ -27,7 +27,7 @@ const projects = [
 		id: 3,
 		title: "Weather Prediction App",
 		description:
-			"Weather prediction app using ML, React frontend and Python backend.",
+			"Fullstack weather prediction app using React for frontend and Flask for backend.",
 		image: "/projects/weather.png",
 		tags: ["Frontend", "Backend", "React", "Python", "ML"],
 		demoUrl: "https://prediksi-cuaca.asiff.live",
@@ -39,7 +39,7 @@ const projects = [
 		id: 4,
 		title: "DSF Agency MERN",
 		description:
-			"Agency platform with MERN stack, separated frontend and backend, with CMS.",
+			"Fullstack agency platform built with the MERN stack, featuring separate frontend and backend, and a CMS for content management.",
 		image: "/projects/agency2.png",
 		tags: [
 			"Frontend",
@@ -60,10 +60,10 @@ const projects = [
 		title: "Tumbuh Hospitality & Arts School",
 		description: "Campus website for Tumbuh Hospitality & Arts School using Laravel.",
 		image: "/projects/thas.png",
-		tags: ["Backend", "Laravel", "PHP"],
+		tags: ["Frontend", "Backend", "Laravel", "PHP"],
 		demoUrl: "https://hospitalityartsschool.asiff.live",
 		githubUrl: "https://github.com/sifaq00/thas-laravel",
-		category: "backend",
+		category: "fullstack",
 	},
 	{
 		id: 6,
@@ -117,7 +117,7 @@ export const ProjectsSection = () => {
 					{projects.map((project, key) => (
 						<div
 							key={key}
-							className="group bg-gradient-to-br from-secondary/60 to-card/80 rounded-xl overflow-hidden shadow-lg hover:shadow-primary/30 card-hover border border-border/30 transition-all duration-300 hover:-translate-y-1"
+							className="group bg-gradient-to-br from-secondary/60 to-card/80 rounded-xl overflow-hidden shadow-lg hover:shadow-primary/30 card-hover border border-border/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full"
 						>
 							<div className="h-56 overflow-hidden relative">
 								<img
@@ -145,7 +145,7 @@ export const ProjectsSection = () => {
 								</span>
 							</div>
 
-							<div className="p-6">
+							<div className="p-6 flex flex-col flex-1">
 								<div className="flex flex-wrap gap-2 mb-4">
 									{project.tags.map((tag, idx) => (
 										<span
@@ -171,39 +171,39 @@ export const ProjectsSection = () => {
 								<p className="text-muted-foreground text-sm mb-4">
 									{project.description}
 								</p>
-								<div className="flex justify-between items-center">
-									<div className="flex space-x-3">
-										{project.demoUrl && project.demoUrl !== "#" && (
-											<a
-												href={project.demoUrl}
-												target="_blank"
-												className="text-foreground/80 hover:text-primary transition-colors duration-300"
-												title="Live Demo"
-											>
-												<ExternalLink size={20} />
-											</a>
-										)}
-										{project.githubUrl && (
-											<a
-												href={project.githubUrl}
-												target="_blank"
-												className="text-foreground/80 hover:text-primary transition-colors duration-300"
-												title="Frontend/Repo"
-											>
-												<Github size={20} />
-											</a>
-										)}
-										{project.githubUrl2 && (
-											<a
-												href={project.githubUrl2}
-												target="_blank"
-												className="text-foreground/80 hover:text-green-500 transition-colors duration-300"
-												title="Backend/Repo"
-											>
-												<Github size={20} />
-											</a>
-										)}
-									</div>
+								<div className="flex-grow" />
+								<div className="flex gap-2 mt-2">
+									{project.demoUrl && project.demoUrl !== "#" && (
+										<a
+											href={project.demoUrl}
+											target="_blank"
+											className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold text-sm hover:bg-primary/20 transition-colors duration-300 shadow-sm border border-primary/20"
+											title="Live Demo"
+										>
+											<ExternalLink size={16} />
+											<span>Live Site</span>
+										</a>
+									)}
+									{project.githubUrl && (
+										<a
+											href={project.githubUrl}
+											target="_blank"
+											className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-primary/10 text-primary font-semibold text-sm hover:bg-primary/20 transition-colors duration-300 shadow-sm border border-primary/20"
+											title="Frontend/Repo"
+										>
+											<Github size={16} />
+										</a>
+									)}
+									{project.githubUrl2 && (
+										<a
+											href={project.githubUrl2}
+											target="_blank"
+											className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-green-500/10 text-green-700 font-semibold text-sm hover:bg-green-500/20 transition-colors duration-300 shadow-sm border border-green-500/20"
+											title="Backend/Repo"
+										>
+											<Github size={16} />
+										</a>
+									)}
 								</div>
 							</div>
 						</div>
