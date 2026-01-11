@@ -14,8 +14,8 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              I am a developer based in Indonesia with a strong focus on
-              <strong>Web Development</strong> and <strong>Machine Learning</strong>.
+              I am a developer based in Indonesia with a strong focus on 
+              <strong> Web Development</strong> and <strong>Machine Learning</strong>.
               I actively build real-world applications ranging from full-stack web systems
               to AI-powered solutions.
             </p>
