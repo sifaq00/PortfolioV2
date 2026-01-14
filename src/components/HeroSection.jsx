@@ -94,7 +94,7 @@ export const HeroSection = () => {
             {/* Profile Image Container */}
             <div className="relative w-full h-full rounded-full border-2 border-primary/20 p-2 bg-background/30 backdrop-blur-xs">
               <img 
-                src="/profile/profile.png" 
+                src="/profile/profile.jpeg" 
                 alt="Muhammad Asifaq" 
                 className="w-full h-full rounded-full object-cover border border-primary/10 shadow-2xl"
               />
