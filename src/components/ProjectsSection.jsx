@@ -3,6 +3,17 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
 	{
 		id: 1,
+		title: "Simulasi CAT SKD CPNS",
+		description:
+			"Fullstack platform for CPNS exam simulation with real-time timer, auto-save answers, Midtrans payment integration, and instant SKD score analysis.",
+		image: "/projects/cpns.png",
+		tags: ["Fullstack", "Laravel", "Livewire", "Tailwind CSS", "MySQL", "Midtrans"],
+		demoUrl: "#",
+		githubUrl: "https://github.com/sifaq00/SimulasiCAT-SKD-CPNS",
+		category: "fullstack",
+	},
+	{
+		id: 2,
 		title: "BISINDO YOLO Mediapipe",
 		description:
 			"Frontend for BISINDO sign language detection using YOLO and MediaPipe.",
