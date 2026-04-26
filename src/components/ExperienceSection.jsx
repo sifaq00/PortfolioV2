@@ -3,10 +3,21 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Calendar, MapPin, Building2 } from "lucide-react";
 import PropTypes from "prop-types";
 
-// Urutkan experiences: Intern (2025), Coding Camp (2025), Bangkit (2023)
+// Urutkan experiences: Fingerspot (2026), Intern (2025), Coding Camp (2025), Bangkit (2023)
 const experiences = [
 	{
 		id: 1,
+		role: "Programmer",
+		company: "fingerspot.io",
+		location: "Yogyakarta, Indonesia",
+		date: "2026",
+		description:
+			"Built and maintained attendance and workforce-management features, developing responsive dashboards and backend services for internal tools and client-facing workflows.",
+		tech: ["React JS", "Express", "TypeScript", "PostgreSQL", "REST API"],
+		image: "/experience/fingerspot.png",
+	},
+	{
+		id: 2,
 		role: "Fullstack Developer Intern",
 		company: "Sekolah Tumbuh",
 		location: "Yogyakarta, Indonesia",
@@ -17,7 +28,7 @@ const experiences = [
 		image: "/experience/tumbuh.png",
 	},
 	{
-		id: 2,
+		id: 3,
 		role: "Frontend & Backend Developer",
 		company: "Coding Camp by DBS Foundation",
 		location: "Online / Dicoding",
@@ -28,7 +39,7 @@ const experiences = [
 		image: "/experience/codingcamp.png",
 	},
 	{
-		id: 3,
+		id: 4,
 		role: "Machine Learning Cohort",
 		company: "Bangkit Academy by Google, GoTo, & Traveloka",
 		location: "Remote / Coursera & Dicoding",

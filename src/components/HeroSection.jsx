@@ -134,7 +134,7 @@ export const HeroSection = () => {
             <div className="relative w-full h-full rounded-full p-2">
               <div className="w-full h-full rounded-full overflow-hidden border-2 border-primary/15 shadow-2xl shadow-primary/10">
                 <img 
-                  src="/profile/profile.jpeg" 
+                  src="/profile/profile2.png" 
                   alt="Muhammad Asifaq" 
                   className="w-full h-full object-cover"
                 />
